@@ -1,15 +1,20 @@
-import gulp from 'gulp'
+import gulp from 'gulp';
 
-import sass from 'gulp-sass'
+/*CSS & SASS */
+import sass from 'gulp-sass';
 
-import postcss from 'gulp-postcss'
-import autoprefixer from 'autoprefixer'
-import cssnano from 'cssnano'
+import postcss from 'gulp-postcss';
+/*postcss plugins:*/
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 
-import htmlmin from 'gulp-htmlmin'
+/** HTML & PUG */
+import htmlmin from 'gulp-htmlmin';
+import pug from 'gulp-pug';
 
-import imagemin from 'gulp-imagemin'
-import cacheBust from 'gulp-cache-bust'
+/** browser sync */
+import server from 'browser-sync';
+
 
 gulp.task('sass', () => 
     gulp
@@ -30,21 +35,20 @@ gulp.task('styles', () =>
     .pipe(gulp.dest('./public/css'))
 )
 
-gulp.task('html-min', () =>
+gulp.task('pug', () => 
     gulp
-    .src('./src/index.html')
-    .pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true
-    }))
-    .pipe(cacheBust({
-        type: 'timestamp'
+    .src('./src/pug/index.pug')
+    .pipe(pug({
+        pretty: false
     }))
     .pipe(gulp.dest('./public'))
 )
 
 gulp.task('default', () => {
-    // gulp.watch('./src/*.html', gulp.series('html-min'))
-    gulp.watch('./src/scss/*.scss', gulp.series('sass'))
-    gulp.watch('./src/css/*.css', gulp.series('styles'))
+    server.init({
+        server: './public'
+    })
+    gulp.watch('./src/pug/index.pug', gulp.series('pug')).on('change', server.reload);
+    gulp.watch('./src/scss/*.scss', gulp.series('sass')).on('change', server.reload);
+    gulp.watch('./src/css/*.css', gulp.series('styles')).on('change', server.reload);
 })
