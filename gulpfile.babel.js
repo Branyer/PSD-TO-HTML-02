@@ -49,6 +49,7 @@ gulp.task('default', () => {
         server: './public'
     })
     gulp.watch('./src/pug/index.pug', gulp.series('pug')).on('change', server.reload);
+    gulp.watch('./src/pug/includes/*.pug', gulp.series('pug')).on('change', server.reload);
     gulp.watch('./src/scss/*.scss', gulp.series('sass')).on('change', server.reload);
     gulp.watch('./src/css/*.css', gulp.series('styles')).on('change', server.reload);
 })
