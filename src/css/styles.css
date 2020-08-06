@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+.button__download {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.button__download:hover {
+  transform: scale(0.98);
+}
+
+.button_get-started {
+  color: white;
+  background-color: #ff9b51;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  height: 60px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.button_get-started:hover {
+  background-color: #ff7e1e;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,14 +50,22 @@ ul li a {
   text-decoration: none;
 }
 
+button,
+input {
+  border: none;
+  outline: none;
+}
+
 .navbar {
   align-items: center;
   background-color: black;
   display: flex;
   height: fit-content;
   justify-content: space-around;
+  left: 0;
   min-height: 60px;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -62,4 +102,118 @@ ul li a {
 .navbar .navbar__logo .logo {
   margin-left: 10%;
   width: 75px;
+}
+
+.header {
+  background-image: url("../images/background-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  margin-top: 70px;
+  min-height: 80vh;
+}
+
+.header .container__header {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+}
+
+.header .container__header .container {
+  flex: .5;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: 10%;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container__header .header__logo {
+  align-self: flex-start;
+}
+
+.header .container__header .header__title {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.header .container__header hr {
+  width: 65px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.header .container__header .header__paragraph {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding: 30px 0;
+}
+
+.header .container__header .button__download--aling-self {
+  align-self: flex-start;
+}
+
+.header .container__header .form {
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 200px;
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+}
+
+.header .container__header .form .form__header {
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header .container__header .form .form__title {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.header .container__header .form .form__title--orange {
+  color: #ff9b51;
+}
+
+.header .container__header .form .form__form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .container__header .form .form__form-input input[type="text"],
+.header .container__header .form .form__form-input input[type="email"],
+.header .container__header .form .form__form-input input[type="password"] {
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: 30px 0;
+  width: 80%;
+}
+
+.header .container__header .form .form__form-input input[type="text"]::placeholder,
+.header .container__header .form .form__form-input input[type="email"]::placeholder,
+.header .container__header .form .form__form-input input[type="password"]::placeholder {
+  color: #c6c6c6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header .container__header .form .form__form-input input[type="submit"] {
+  margin-top: 35px;
 }

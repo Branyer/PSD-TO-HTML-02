@@ -1,0 +1,30 @@
+.button__download {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: $font-openSans;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    width: fit-content;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}
+
+.button_get-started {
+    color: white;
+    background-color: #ff9b51;
+    font-family: $font-openSans;
+    font-weight: 600;
+    font-size: 1.1rem;
+    height: 60px;
+    transition: all 0.3s ease;
+    width: 100%;
+
+    &:hover {
+        background-color: darken(#ff9b51, 10%);
+    }
+}
