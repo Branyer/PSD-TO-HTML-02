@@ -18,10 +18,18 @@
 
         .menu li {
             margin: 10px 25px;
+            font-family: $font-openSans;
         }
 
         .menu__item {
             color: white;
+            padding-bottom: 1px;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: gray;
+                border-bottom: 2px solid white;
+            }
         }
     }
 
