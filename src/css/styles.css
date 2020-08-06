@@ -6,5 +6,51 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.navbar {
+  align-items: center;
   background-color: black;
+  display: flex;
+  height: fit-content;
+  justify-content: space-around;
+  min-height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .navbar__menu {
+  flex: 0.6;
+}
+
+.navbar .navbar__menu .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar .navbar__menu .menu li {
+  margin: 10px 25px;
+}
+
+.navbar .navbar__menu .menu__item {
+  color: white;
+}
+
+.navbar .navbar__logo {
+  flex: 0.4;
+}
+
+.navbar .navbar__logo .logo {
+  margin-left: 10%;
+  width: 75px;
 }
