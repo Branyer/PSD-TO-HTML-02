@@ -2,11 +2,10 @@
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    cursor: pointer;
     font-family: $font-openSans;
     font-weight: 600;
     padding: 10px 30px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     width: fit-content;
 
     &:hover {
