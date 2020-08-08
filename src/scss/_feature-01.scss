@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    padding: 10%;
+    padding: 7%;
     min-height: 50vh;
 
     .container-tabs{
@@ -67,12 +67,15 @@
     }
 
     .container-image{
-        align-items: center;
-        display: flex;
-        flex-basis: 45%;
+     
+        display: grid;
+        place-items: center;
+        flex-basis: 350px;
         flex-grow: 1;
-        justify-content: center;
         margin-top: 100px;
-        
+        img{
+            max-width: 300px;
+            width: 90%;
+        }
     }
 }

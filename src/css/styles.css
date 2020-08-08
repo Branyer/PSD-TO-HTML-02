@@ -307,7 +307,7 @@ input[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
-  padding: 10%;
+  padding: 7%;
   min-height: 50vh;
 }
 
@@ -370,12 +370,85 @@ input[type="submit"] {
 }
 
 .feature-01 .container-image {
-  align-items: center;
-  display: flex;
-  flex-basis: 45%;
+  display: grid;
+  place-items: center;
+  flex-basis: 350px;
   flex-grow: 1;
-  justify-content: center;
   margin-top: 100px;
+}
+
+.feature-01 .container-image img {
+  max-width: 300px;
+  width: 90%;
+}
+
+.feature-02 {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  height: max-content;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feature-02 .feature-02__container-image {
+  flex-basis: 500px;
+  display: grid;
+  place-items: center;
+  flex-grow: 1;
+}
+
+.feature-02 .feature-02__container-image img {
+  max-width: 500px;
+  width: 90%;
+}
+
+.feature-02 .feature-02__container-text {
+  flex-basis: 470px;
+  flex-grow: 0.8;
+  flex-shrink: 1;
+  padding: 7%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.feature-02 .feature-02__container-text hr {
+  width: 15%;
+  text-align: left;
+  margin-left: 0;
+  border: 1px solid #ff8b38;
+}
+
+.feature-02 .feature-02__container-text p {
+  color: gray;
+  font-size: .9rem;
+  margin-top: 2px;
+}
+
+.feature-02 .feature-02__container-text .title {
+  margin-left: 30px;
+}
+
+.feature-02 .feature-02__container-text .title h4 {
+  font-size: .95rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.feature-02 .feature-02__container-text .container-text__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-02 .feature-02__container-text .container-text__title i {
+  padding: 12px 9px;
+  border: 2px solid #ff8b38;
+  border-radius: 100%;
+  color: #ff8b38;
+}
+
+.feature-02 .feature-02__container-text .container-text__title #turn {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 700px) {
@@ -384,5 +457,11 @@ input[type="submit"] {
   }
   .container-infos {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  #container-buttons-tab {
+    flex-direction: column;
   }
 }

@@ -7,3 +7,10 @@
       margin-top: 40px;
     }
   }
+
+@media (max-width: 350px) {
+    #container-buttons-tab {
+      flex-direction: column;
+    }
+
+  }
