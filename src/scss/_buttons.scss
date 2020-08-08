@@ -5,11 +5,21 @@
     font-family: $font-openSans;
     font-weight: 600;
     padding: 10px 30px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     width: fit-content;
 
     &:hover {
         transform: scale(.98);
+    }
+}
+
+.button__download--orange {
+    background-color: #ff8b38;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+
+    &:hover {
+        box-shadow: 0px 0px 0px black;
     }
 }
 
@@ -26,4 +36,20 @@
     &:hover {
         background-color: darken(#ff9b51, 10%);
     }
+}
+
+.button-tab {
+    background-color: #333333;
+    color: white;
+    font-family: $font-openSans;
+    min-width: 100px;
+    width: fit-content;
+    min-height: 100px;
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.selected {
+    background-color:#ff8b38;
 }

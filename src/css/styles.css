@@ -7,12 +7,22 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   padding: 10px 30px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   width: fit-content;
 }
 
 .button__download:hover {
   transform: scale(0.98);
+}
+
+.button__download--orange {
+  background-color: #ff8b38;
+  border: none;
+  box-shadow: 0px 0px 1px black;
+}
+
+.button__download--orange:hover {
+  box-shadow: 0px 0px 0px black;
 }
 
 .button_get-started {
@@ -28,6 +38,22 @@
 
 .button_get-started:hover {
   background-color: #ff7e1e;
+}
+
+.button-tab {
+  background-color: #333333;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  min-width: 100px;
+  width: fit-content;
+  min-height: 100px;
+  font-weight: bold;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.selected {
+  background-color: #ff8b38;
 }
 
 * {
@@ -71,6 +97,7 @@ input[type="submit"] {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar .navbar__menu {
@@ -224,7 +251,7 @@ input[type="submit"] {
 
 .brand-bar {
   align-items: center;
-  border-bottom: 2px solod gray;
+  border-bottom: 2px solid #cccccc;
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
@@ -273,4 +300,89 @@ input[type="submit"] {
 
 .brand-bar .container-brand_icons a .fa-wifi {
   transform: rotate(45deg);
+}
+
+.feature-01 {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 10%;
+  min-height: 50vh;
+}
+
+.feature-01 .container-tabs {
+  position: relative;
+  display: flex;
+  flex-basis: 55%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature-01 .container-tabs .container-infos {
+  height: 100%;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  z-index: 0;
+}
+
+.feature-01 .container-tabs .container-infos .not_show {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.feature-01 .container-tabs .container-infos .next {
+  transform: translateY(-101%);
+}
+
+.feature-01 .container-tabs .container-infos .before {
+  transform: translateY(101%);
+}
+
+.feature-01 .container-tabs .container-buttons-tab {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.feature-01 .container-tabs .container-tab-info {
+  flex-basis: 380px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 50px;
+  transition: all 1s ease;
+}
+
+.feature-01 .container-tabs .container-tab-info p {
+  color: grey;
+  font-size: .9rem;
+}
+
+.feature-01 .container-tabs .container-tab-info :nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.feature-01 .container-image {
+  align-items: center;
+  display: flex;
+  flex-basis: 45%;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 700px) {
+  #container-buttons-tab {
+    flex-direction: row;
+  }
+  .container-infos {
+    margin-top: 40px;
+  }
 }
