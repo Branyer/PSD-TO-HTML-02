@@ -670,6 +670,107 @@ div.pricing .pricing__options .pricing__box .content p {
   padding: 10px;
 }
 
+div.testimonials {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div.testimonials .testimonials__text {
+  text-align: center;
+  margin: 60px;
+}
+
+div.testimonials .testimonials__text h1 {
+  font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+div.testimonials .testimonials__text hr {
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid #ff8b38;
+}
+
+div.testimonials .testimonials__text p {
+  color: grey;
+  font-size: .9rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.testimonials .testimonials__customers {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+  padding-top: 0;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial {
+  flex-basis: 250px;
+  max-width: 300px;
+  flex-grow: 1;
+  margin: 10px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .cite {
+  width: 100%;
+  padding: 20px 10px;
+  color: gray;
+  margin-bottom: 10px;
+  height: 140px;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .cite cite {
+  position: relative;
+  z-index: 200;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .cite .cloud-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: inherit;
+  height: inherit;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .avatar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .avatar img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .avatar .avatar__data {
+  margin-left: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .avatar .avatar__data h2,
+div.testimonials .testimonials__customers .customers__testimonial .avatar .avatar__data h4 {
+  margin: 0;
+}
+
+div.testimonials .testimonials__customers .customers__testimonial .avatar .avatar__data h4 {
+  color: gray;
+  font-weight: 400;
+}
+
 @media (max-width: 700px) {
   #container-buttons-tab {
     flex-direction: row;
