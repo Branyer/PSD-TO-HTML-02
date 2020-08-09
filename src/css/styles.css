@@ -561,6 +561,115 @@ div.our-process .our-procces__process .our-process__box p {
   font-size: .9rem;
 }
 
+div.pricing {
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div.pricing .pricing__text {
+  text-align: center;
+  margin: 60px;
+}
+
+div.pricing .pricing__text h1 {
+  font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+div.pricing .pricing__text hr {
+  border: 1px solid #ff8b38;
+  margin: 0 auto;
+  width: 20%;
+}
+
+div.pricing .pricing__text p {
+  color: grey;
+  font-family: "Open Sans", sans-serif;
+  font-size: .9rem;
+}
+
+div.pricing .pricing__options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+div.pricing .pricing__options .pricing__box {
+  font-family: "Open Sans", sans-serif;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 10px;
+  min-width: 200px;
+  width: 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+div.pricing .pricing__options .pricing__box header.most-popular {
+  padding: 0;
+}
+
+div.pricing .pricing__options .pricing__box header {
+  background-color: #333333;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #ff8b38;
+}
+
+div.pricing .pricing__options .pricing__box header h3 {
+  border-bottom: 1px solid white;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+div.pricing .pricing__options .pricing__box header .price {
+  font-family: "Raleway", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 5px;
+}
+
+div.pricing .pricing__options .pricing__box header .price::before {
+  content: '$';
+  font-size: 2rem;
+}
+
+div.pricing .pricing__options .pricing__box header .info-payment {
+  color: #727272;
+  font-style: italic;
+  font-size: .8rem;
+}
+
+div.pricing .pricing__options .pricing__box header .most-popular {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ff8b38;
+  padding: 7px;
+  margin: 0;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+div.pricing .pricing__options .pricing__box .content {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+div.pricing .pricing__options .pricing__box .content p {
+  font-size: .9rem;
+  color: gray;
+  margin: 0;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 10px;
+}
+
 @media (max-width: 700px) {
   #container-buttons-tab {
     flex-direction: row;
@@ -573,5 +682,8 @@ div.our-process .our-procces__process .our-process__box p {
 @media (max-width: 350px) {
   #container-buttons-tab {
     flex-direction: column;
+  }
+  :root {
+    font-size: 12px;
   }
 }

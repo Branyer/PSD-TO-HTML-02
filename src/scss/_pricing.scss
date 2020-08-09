@@ -1,0 +1,105 @@
+div.pricing {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    min-height: 100vh;
+
+    .pricing__text {
+        text-align: center; 
+        margin: 60px;
+        h1 {
+            font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 1px solid #ff8b38;
+            margin: 0 auto;
+            width: 20%;
+        }
+
+        p {
+            color: grey;
+            font-family: $font-openSans;
+            font-size: .9rem;
+        }
+    }
+
+    .pricing__options {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        .pricing__box {
+            font-family: $font-openSans;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin: 10px;
+            min-width: 200px;
+            width: 300px;
+            max-width: 400px;
+            
+            text-align: center;
+
+            header.most-popular {
+                padding: 0;
+            }
+
+            header {
+                background-color: #333333;
+                color: white;
+                padding-bottom: 10px;
+                border-bottom: 5px solid #ff8b38 ;
+                h3 {
+                    border-bottom: 1px solid white;
+                    font-size: 1rem;
+                    padding: 10px;
+                }
+
+                .price {
+                    font-family: $font-raleway;
+                    font-size: 5rem;
+                    font-weight: bold;
+                    margin: 5px;
+
+                    &::before {
+                        content: '$';
+                        font-size: 2rem;
+                    }
+                }
+
+                .info-payment {
+                    color: #727272;
+                    font-style: italic;
+                    font-size: .8rem;
+                }
+
+                .most-popular {
+                    font-family: $font-openSans;
+                    background-color: #ff8b38 ;
+                    padding: 7px;
+                    margin: 0;
+                    font-size: .9rem;
+                    font-weight: bold;
+                }
+            }
+
+            .content {
+                background-color: white;
+                font-family: $font-openSans;
+                p {
+                    font-size: .9rem;
+                    color: gray;
+                    margin: 0;
+                    border-bottom: 1px solid #f5f5f5;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
