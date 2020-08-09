@@ -45,41 +45,41 @@ div.testimonials {
             flex-shrink: 0;
             position: relative;
             .cite {
-                width: 100%;
-                padding: 20px 10px;
                 color: gray;
-                margin-bottom: 10px;
+                padding: 20px 10px;
                 height: 140px;
+                margin-bottom: 10px;
+                width: 100%;
                 cite {
                     position: relative;
                     z-index: 200;
                 }
 
                 .cloud-text {
+                    height: inherit;
+                    left: 0;
                     position: absolute;
                     top: 0;
-                    left: 0;
-                    z-index: 100;
                     width: inherit;
-                    height: inherit;
+                    z-index: 100;
                 }
             }
 
             .avatar {
+                align-items: flex-start;
                 display: flex;
                 justify-content: flex-start;
-                align-items: flex-start;
                 margin-left: 15px;
 
                 img {
-                    max-width: 60px;
                     max-height: 60px;
+                    max-width: 60px;
                 }
 
                 .avatar__data {
-                    margin-left: 5px;
                     font-family: $font-openSans;
                     font-size: 0.7rem;
+                    margin-left: 5px;
                     h2,
                     h4
                      {
@@ -90,12 +90,8 @@ div.testimonials {
                         color: gray;
                         font-weight: 400;
                     }
-
-
                 }
-            }
-
-            
+            } 
         }
     }
 }

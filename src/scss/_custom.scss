@@ -1,0 +1,50 @@
+div.custom {
+    background-image: url('../images/background-custom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: fit-content;
+    min-height: 40vh;
+    place-items: center;
+    position: relative;
+    z-index: 100;
+
+    .filter-black{
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+    }
+
+    .custom__text {
+        color: white;
+        margin: 60px;
+        position: relative;
+        text-align: center; 
+        z-index: 300;
+        
+        h1 {
+            font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 0 auto;
+            width: 20%;
+        }
+
+        p {
+            color: rgb(165, 165, 165);
+            font-size: .9rem;
+            font-family: $font-openSans;
+            margin: 30px 0;
+        }
+    }
+}
