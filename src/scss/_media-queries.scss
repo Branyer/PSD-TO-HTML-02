@@ -8,6 +8,20 @@
     }
   }
 
+
+  @media (max-width: 860px) {
+    .header {
+      margin-top: 116px;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    .header {
+      margin-top: 158px;
+    }
+  }
+
   @media (max-width: 600px) {
     textarea {
       width: 300px;
@@ -25,6 +39,10 @@
 
     textarea {
       width: 180px;
+    }
+
+    .header {
+      margin-top: 135px;
     }
 
   }

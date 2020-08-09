@@ -35,14 +35,15 @@ div.pricing {
         justify-content: center;
         align-items: flex-end;
         flex-wrap: wrap;
+        width: 90vw;
         .pricing__box {
             font-family: $font-openSans;
-            flex-grow: 1;
+            flex-grow: 0;
             flex-shrink: 1;
             margin: 10px;
-            min-width: 200px;
-            width: 300px;
-            max-width: 400px;
+            min-width: 100px;
+            flex-basis: 300px;
+          
             
             text-align: center;
 

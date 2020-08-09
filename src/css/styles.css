@@ -607,16 +607,16 @@ div.pricing .pricing__options {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
+  width: 90vw;
 }
 
 div.pricing .pricing__options .pricing__box {
   font-family: "Open Sans", sans-serif;
-  flex-grow: 1;
+  flex-grow: 0;
   flex-shrink: 1;
   margin: 10px;
-  min-width: 200px;
-  width: 300px;
-  max-width: 400px;
+  min-width: 100px;
+  flex-basis: 300px;
   text-align: center;
 }
 
@@ -951,6 +951,18 @@ div.contact-us .contact-us__form input[type="submit"] {
   }
 }
 
+@media (max-width: 860px) {
+  .header {
+    margin-top: 116px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin-top: 158px;
+  }
+}
+
 @media (max-width: 600px) {
   textarea {
     width: 300px;
@@ -966,5 +978,8 @@ div.contact-us .contact-us__form input[type="submit"] {
   }
   textarea {
     width: 180px;
+  }
+  .header {
+    margin-top: 135px;
   }
 }
