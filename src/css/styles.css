@@ -497,6 +497,69 @@ input[type="submit"] {
   width: 90%;
 }
 
+div.our-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  height: fit-content;
+}
+
+div.our-process .our-process__text {
+  text-align: center;
+  margin: 60px;
+}
+
+div.our-process .our-process__text h1 {
+  font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+div.our-process .our-process__text hr {
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid #ff8b38;
+}
+
+div.our-process .our-process__text p {
+  color: grey;
+  font-size: .9rem;
+}
+
+div.our-process .our-procces__process {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 0px 5%;
+}
+
+div.our-process .our-procces__process .our-process__box {
+  margin: 10px;
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: 200px;
+}
+
+div.our-process .our-procces__process .our-process__box i {
+  border: 2px solid #fe8b38;
+  border-radius: 100%;
+  color: #fe8b38;
+  padding: 20px 20px;
+  font-size: 1.6rem;
+}
+
+div.our-process .our-procces__process .our-process__box p {
+  color: grey;
+  font-size: .9rem;
+}
+
 @media (max-width: 700px) {
   #container-buttons-tab {
     flex-direction: row;
