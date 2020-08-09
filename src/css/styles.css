@@ -909,6 +909,39 @@ div.contact-us .contact-us__form .container-form .contact-us__textarea ::placeho
   font-family: "Open Sans", sans-serif;
 }
 
+div.contact-us .contact-us__form input[type="submit"] {
+  margin-bottom: 30px;
+}
+
+.footer {
+  align-items: center;
+  background-color: black;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  min-height: 10vh;
+  width: 100%;
+}
+
+.footer .footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer .footer__icons i {
+  color: #ffffff;
+  font-size: 1.7rem;
+  margin: 15px 20px;
+}
+
+.footer .footer__icons .fa-wifi {
+  transform: rotate(45deg);
+}
+
 @media (max-width: 700px) {
   #container-buttons-tab {
     flex-direction: row;

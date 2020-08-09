@@ -1,0 +1,26 @@
+.footer {
+    align-items: center;
+    background-color: black;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    min-height: 10vh;
+    width: 100%;
+    .footer__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        i {
+            color: #ffffff;
+            font-size: 1.7rem;
+            margin: 15px 20px;
+        }
+
+        .fa-wifi {
+            transform: rotate(45deg);
+        }
+    }
+}
