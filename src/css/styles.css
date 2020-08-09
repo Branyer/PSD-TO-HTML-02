@@ -709,7 +709,7 @@ div.testimonials .testimonials__customers {
   padding: 5%;
   padding-top: 0;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 90vw;
 }
 
 div.testimonials .testimonials__customers .customers__testimonial {
