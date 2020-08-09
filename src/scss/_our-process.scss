@@ -1,15 +1,15 @@
 div.our-process {
 
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
     height: fit-content;
+    justify-content: center;
+    min-height: 70vh;
 
     .our-process__text {
-        text-align: center; 
         margin: 60px;
+        text-align: center; 
         h1 {
             font-family: 'Agency FB', Arial, Helvetica, sans-serif;
             font-weight: 400;
@@ -18,9 +18,9 @@ div.our-process {
         }
 
         hr {
+            border: 1px solid #ff8b38;
             margin: 0 auto;
             width: 20%;
-            border: 1px solid #ff8b38;
         }
 
         p {
@@ -31,19 +31,19 @@ div.our-process {
     }
 
     .our-procces__process {
+        align-items: center;
         display: flex;
+        flex-wrap: wrap;
         font-family: $font-openSans;
         justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
         padding: 0px 5%;
+        text-align: center;
 
         .our-process__box {
-            margin: 10px;
             flex-basis: 25%;
             flex-grow: 0;
             flex-shrink: 0;
+            margin: 10px;
             min-width: 200px;
             
             i {
@@ -59,6 +59,5 @@ div.our-process {
                 font-size: .9rem;
             }
         }
-
     }
 }

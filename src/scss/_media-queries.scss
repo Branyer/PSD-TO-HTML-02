@@ -8,6 +8,12 @@
     }
   }
 
+  @media (max-width: 600px) {
+    textarea {
+      width: 300px;
+    }
+  }
+
 @media (max-width: 350px) {
     #container-buttons-tab {
       flex-direction: column;
@@ -15,6 +21,10 @@
 
     :root {
       font-size: 12px;
+    }
+
+    textarea {
+      width: 180px;
     }
 
   }

@@ -1,0 +1,16 @@
+div.contact-us 
+     div.container
+        div.contact-us__text
+            h1 CONTACT US
+            hr 
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     div.container
+        form.contact-us__form(action="#")
+            div.container-form
+                div.contact-us__inputs
+                    input(type="text", name="name", id="name", placeholder="Name", required)
+                    input(type="email", name="email", id="email", placeholder="Email", required)
+                    input(type="password", name="password", id="password", placeholder="Password", required)
+                div.contact-us__textarea
+                    textarea(name="message", placeholder="Message", required)
+            input.button__download--orange.button__download(type="submit", value="Send Message") 

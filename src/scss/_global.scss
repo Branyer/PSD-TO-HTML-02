@@ -19,10 +19,18 @@ ul li a {
 }
 
 button,
-input
+input,
+textarea
 {
     border: none;
     outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+    width: 500px;
+
 }
 
 button,
