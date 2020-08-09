@@ -9,7 +9,6 @@ import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 
 /** HTML & PUG */
-import htmlmin from 'gulp-htmlmin';
 import pug from 'gulp-pug';
 
 /** browser sync */

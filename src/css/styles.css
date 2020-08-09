@@ -107,6 +107,11 @@ input[type="submit"] {
   z-index: 1000;
 }
 
+.navbar i {
+  color: white;
+  display: none;
+}
+
 .navbar .navbar__menu {
   flex: 0.6;
 }
@@ -148,7 +153,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-size: cover;
   height: fit-content;
-  margin-top: 70px;
+  margin-top: 60px;
   min-height: 80vh;
 }
 
@@ -951,15 +956,23 @@ div.contact-us .contact-us__form input[type="submit"] {
   }
 }
 
-@media (max-width: 860px) {
-  .header {
-    margin-top: 116px;
+@media (max-width: 900px) {
+  .navbar i {
+    display: block;
+    font-size: 1.3rem;
   }
-}
-
-@media (max-width: 500px) {
-  .header {
-    margin-top: 158px;
+  .navbar .navbar__menu {
+    flex: 0.1;
+    position: absolute;
+    background-color: black;
+    top: 60px;
+    right: 5px;
+    border: 2px solid white;
+    transform: translate(300%);
+    transition: all 0.6s ease;
+  }
+  .navbar .navbar__menu .menu {
+    flex-direction: column;
   }
 }
 
@@ -978,8 +991,5 @@ div.contact-us .contact-us__form input[type="submit"] {
   }
   textarea {
     width: 180px;
-  }
-  .header {
-    margin-top: 135px;
   }
 }

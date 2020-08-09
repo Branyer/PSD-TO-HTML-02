@@ -8,21 +8,35 @@
     }
   }
 
+@media (max-width: 900px ) {
 
-  @media (max-width: 860px) {
-    .header {
-      margin-top: 116px;
+  .navbar {
+    
+    i {
+      display: block;
+      font-size: 1.3rem;
+
+
+    }
+  
+    .navbar__menu {
+        flex: 0.1;
+        position: absolute;
+        background-color: black;
+        top: 60px;
+        right: 5px;
+        border: 2px solid white;
+        transform: translate(300%);
+        transition: all 0.6s ease;
+        .menu {
+          flex-direction: column;
+      }
     }
   }
+}
 
 
-  @media (max-width: 500px) {
-    .header {
-      margin-top: 158px;
-    }
-  }
-
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     textarea {
       width: 300px;
     }
@@ -40,9 +54,4 @@
     textarea {
       width: 180px;
     }
-
-    .header {
-      margin-top: 135px;
-    }
-
   }
